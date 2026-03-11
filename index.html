@@ -3,25 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DMetódusok alapjai</title>
+    <title>Metódusok alapjai</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <header>
+        <nav>
+            <div>
+                <h1>Metódusok alapjai</h1>
+            </div>
+            <ul>
+                <li><a href="#alapfogalmak">Alapfogalmak</a></li>
+                <li><a href="#metodustipusok">Metódustípusok</a></li>
+            </ul>
+        </nav>  
+    </header>
     <main>
-        <header>
-            <nav>
-                <div>
-                    <h1>Metódusok alapjai</h1>
-                </div>
 
-                <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                </ul>
-                </nav>  
-        </header>
+        <section id="alapfogalmak">
+            <h2>Metódusokhoz kapcsolódó alapfogalmak</h2>
+            <p>A metódusok a C# nyelvben olyan kódrészletek, amelyek egy adott feladatot hajtanak végre. Egy metódus felépítése:</p>
+            <ul>
+                <li><strong>Fejléc:</strong> Meghatározza a metódus nevét, paramétereit és visszatérési típusát</li>
+                <li><strong>Törzs:</strong> A metódus végrehajtandó utasításait tartalmazza</li>
+                <li><strong>Visszatérési érték:</strong> A metódus eredménye, ha van</li>
+            </ul>
+            <h3>Szintaxis példa:</h3>
+<pre><code class="csharp">
+// Egy egyszerű metódus C#-ban
+public int Osszead(int a, int b)
+{
+    return a + b;
+}
+</code></pre>
+            <h3>Metódus hívása:</h3>
+            <pre><code class="csharp">
+int eredmeny = Osszead(3, 5);
+            </code></pre>
+            <img src="" alt="" class="img">
+        </section>
+        <section id="metodustipusok">
+            <h2>Metódustípusok</h2>
+            <h3>Eljárás (void típusú metódus)</h3>
+            <p>Az eljárás nem ad vissza értéket csak végrehajt egy műveletet</p>
+<pre><code class="csharp">
+public void Udvozles()
+{
+    Console.WriteLine("Üdvözlöm!");
+}
+</code></pre>
+            <h3>Függvény (visszatérési értékkel)</h3>
+            <p>A függvény visszaad egy értéket</p>
+<pre><code class="csharp">
+public double Atlag(double osszeg, int db)
+{
+    return osszeg / db;
+}
+</code></pre>
+        </section>
+        <section id="tablazat">
+            <h2>Metódusok összehasonlítása</h2>
+            <table>
+                    <tr>
+                        <td>Típus</td>
+                        <td>Visszatérési érték</td>
+                        <td>Példa</td>
+                    </tr>
 
+                    <tr>
+                        <td>Eljárás</td>
+                        <td>nincs</td>
+                        <td><code>public void Udvozles()</code></td>
+                    </tr>
+                    <tr>
+                        <td>Függvény</td>
+                        <td>van</td>
+                        <td><code>public int Osszead(int a, int b)</code></td>
+                    </tr>
+            </table>
+        </section>
 
     </main>
     
