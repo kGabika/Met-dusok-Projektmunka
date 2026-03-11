@@ -32,6 +32,13 @@ nav a:hover {
     background: cadetblue;
     border-radius: 10px;
 }
+img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 section {
     margin: 30px;
     padding: 20px;
@@ -102,7 +109,7 @@ tbody td {
 
 @media (min-width: 577px) and (max-width: 768px) {
     body { 
-        background: salmon; 
+        background: cadetblue; 
     }
 }
 
