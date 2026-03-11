@@ -46,15 +46,25 @@ h3 {
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 16px;
-    background: white;
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 7px slategrey;
 }
-td {
-    border: 1px solid lightseagreen;
-    padding: 8px;
+thead th {
+  background: lightseagreen;
+  color: white;
+  font-weight: bold;
+  padding: 12px 8px;
+  text-align: left;
 }
+tbody td {
+  padding: 10px 8px;
+  border-bottom: 1px solid white;
+}
+
 .img {
     max-width: 100%;
     margin-top: 12px;
@@ -73,22 +83,21 @@ td {
     nav ul { 
         flex-direction: column; 
         gap: 10px; 
+
+    }
+    ul{
+        padding-left: 20px;
+        list-style-position: inside;
     }
     section { 
         padding: 10px; 
     }
-    table, tr, td {
-        display: block; 
-        width: 100%; 
-    }
-    td { 
-        border: none;
-        border-top: 1px solid lightseagreen;
-    }
-    tr { 
-        margin-bottom: 10px; 
-    }
+      table, thead, tbody, tr, th, td {
+        display: block;
+        width: 100%;
+  }
 }
+
 
 
 @media (min-width: 577px) and (max-width: 768px) {
