@@ -64,11 +64,11 @@ thead th {
   background: lightseagreen;
   color: white;
   font-weight: bold;
-  padding: 12px 8px;
+  padding: 10px;
   text-align: left;
 }
 tbody td {
-  padding: 10px 8px;
+  padding: 10px;
   border-bottom: 1px solid white;
 }
 
